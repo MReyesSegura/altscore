@@ -22,6 +22,9 @@ app.get('/status', (req: Request, res: Response) => {
 
 app.get('/repair-bay', (req: Request, res: Response) => {
   const repairCode = repairCodes[damagedSystem];
+  if (typeof repairCode !== 'string') {
+   return res.send("You have to get the status first")
+  }
   const htmlContent = `
     <!DOCTYPE html>
     <html>
