@@ -6,8 +6,8 @@
   "engines": {"node": "20.x"},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node index.js",
-    "dev": "ts-node index.js"
+    "start": "ts-node index.ts",
+    "dev": "ts-node index.ts"
   },
   "keywords": [],
   "author": "",
